@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@media (max-width: 768px) {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: blue;
+  }
+  li {
+    padding: 20px;
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+  }
+  ul {
+    display: none;
+  }
+  input:checked ~ ul {
+    display: block;
+  }
+  input {
+    display: none;
+  }
+  label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  label:hover {
+    background: grey;
+  }
+  /* Estilo del boton cuando el menú está expandido*/
+  input:checked ~ label {
+    background: lightgrey;
+  }
+  ul {
+    margin-top: 0;
+    padding: 0;
+    width: 200px;
+  }
+  li {
+    display: block;
+    background: blue;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid black;
+  }
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+  li:hover {
+    filter: brightness(110%);
+  }
+  .desktop {
+    visibility: hidden;
+  }
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+  .titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-style: italic;
+  }
+  /* grid*/
+  .gridhome {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "header" "nav" "main" "section" "aside" "footer";
+  }
+  nav {
+    grid-area: nav;
+  }
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+  }
+  section {
+    grid-area: section;
+  }
+  aside {
+    grid-area: aside;
+  }
+  footer {
+    grid-area: footer;
+  }
+  /*grid footer*/
+  .gridfooter {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-area: auto;
+    grid-template-areas: "aside" "div";
+  }
+  aside {
+    grid-area: aside;
+  }
+  div {
+    grid-area: div;
+  }
+  .gridaside {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-area: auto;
+    grid-template-areas: "div header section main";
+  }
+  div {
+    grid-area: div;
+  }
+  section {
+    grid-area: section;
+  }
+  main {
+    grid-area: main;
+  }
+  header {
+    grid-area: header;
+  }
+}
+@media (min-width: 1024px) {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: blue;
+  }
+  li {
+    padding: 20px;
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+  }
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+  .titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-style: italic;
+  }
+  .mobile {
+    visibility: hidden;
+  }
+  /* grid*/
+  .gridhome, .gridquienessomos {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header header" "nav nav" "main main" "section aside" "footer footer";
+  }
+  nav {
+    grid-area: nav;
+  }
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+  }
+  section {
+    grid-area: section;
+  }
+  aside {
+    grid-area: aside;
+  }
+  footer {
+    grid-area: footer;
+  }
+  /*grid footer*/
+  .gridfooter {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-area: auto;
+    grid-template-areas: "aside div";
+  }
+  aside {
+    grid-area: aside;
+  }
+  div {
+    grid-area: div;
+  }
+  /*
+  .gridaside{
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-area: auto;
+      grid-template-areas: 
+      "div header section main";
+  }
+  div{grid-area: div;}
+  section{grid-area: section;}
+  main{grid-area: main;}
+  header{grid-area: header;}
+  */
+}
+
+/*# sourceMappingURL=style.css.map */
