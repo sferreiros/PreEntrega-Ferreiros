@@ -121,11 +121,11 @@
   div {
     grid-area: div;
   }
-  .gridaside {
+  .gridasidemobile {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 100%;
     grid-area: auto;
-    grid-template-areas: "div header section main";
+    grid-template-areas: "div" "header" "section" "main";
   }
   div {
     grid-area: div;
