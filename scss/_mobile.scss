@@ -132,17 +132,20 @@
     main{grid-area: main;}
     header{grid-area: header;}
 
- /*grid contacto*/
-    .gridcontactomobile{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-area: auto;
-        grid-template-areas: 
-        "div"
-        "section";
+ /* form contacto*/
+    form {
+      max-width: 600px; /* Ancho máximo */
+      margin: 0 auto; /* Centrado horizontal */
     }
-    div{grid-area: div;}
-    section{grid-area: section;}
-    .form form, .rrss {display:flex;flex-direction: column; row-gap: 10px;}
-    label {font-size: 10px;}
+    
+    form label, form input, form textarea {
+      display: block;
+      width: 100%;
+      box-sizing: border-box; /* Incluye padding y borde en el ancho */
+    }
+    form label {margin-top: 2em;}
+    form input[type="submit"] {
+      margin-top: 1em; /* Espacio entre el último campo y el botón */
+    }
+    
     }
