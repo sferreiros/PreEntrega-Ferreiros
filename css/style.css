@@ -299,7 +299,7 @@
   .rrss {
     align-items: end;
   }
-  body, nav {
+  body {
     margin: 0;
     border: 0;
     padding: 0;
