@@ -299,6 +299,11 @@
   .rrss {
     align-items: end;
   }
+  body, nav {
+    margin: 0;
+    border: 0;
+    padding: 0;
+  }
 }
 .titulo div {
   display: flex;
